@@ -19,8 +19,9 @@ def meet_condition(post, start_time):
             for ex_rule in EXCLUDE_RULES:
                 if re.search(ex_rule, text):
                     return False
-            return True
-    return False
+        else:
+            return False
+    return True
 
 
 def send_msg(text):
